@@ -8,6 +8,14 @@ const { title } = Astro.props;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="yusof.monster" />
+    <meta
+      property="og:description"
+      content="yusof's brief little website yk how it do"
+    />
+    <meta property="og:image" content="https://yusof.monster/kitty.png" />
+    <meta property="og:url" content="https://yusof.monster/" />
+    <meta property="og:type" content="website" />
     <title>yusof</title>
     <link rel="icon" href="/kitty.png" />
   </head>
@@ -32,7 +40,7 @@ const { title } = Astro.props;
     />
 
     <footer class="absolute left-[50%] translate-x-[-50%] bottom-8 font-mono">
-        site made w love
+      site made w love
     </footer>
   </body>
 </html>
