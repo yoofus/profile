@@ -1,9 +1,16 @@
 ---
-import { siDiscord, siGithub, siMastodon, siSignal } from "simple-icons";
+import {
+  siBluesky,
+  siDiscord,
+  siGithub,
+  siMastodon,
+  siSignal,
+  siX,
+} from "simple-icons";
 import Social from "./Social.astro";
 ---
 
-<nav class="flex items-center justify-between gap-3 group/nav">
+<nav class="flex items-center justify-between gap-3 group/nav mb-[2rem]">
   <div class="flex flex-row">
     <img
       src="/kitty.png"
@@ -20,18 +27,17 @@ import Social from "./Social.astro";
     </div>
   </div>
   <div class="flex flex-row gap-3">
-    <Social href="https://github.com/yoofus" icon={siGithub}/>
+    <Social href="https://github.com/yoofus" icon={siGithub} />
     <Social
       href="https://discord.com/users/1257722365090205700"
       icon={siDiscord}
     />
-    <Social
-      href="https://wetdry.world/@yusof"
-      icon={siMastodon}
-    />
+    <Social href="https://wetdry.world/@yusof" icon={siMastodon} />
     <Social
       href="https://signal.me/#eu/IaXYvJQ83d6bCcRTTLwXhXZeopIkaUMTSiJJsE24C9_mN1U3vOpJRLQ59QKOHEHn"
       icon={siSignal}
     />
+    <Social href="https://bsky.app/zram.sh" icon={siBluesky} />
+    <Social href="x.com/@yuufos" icon={siX} />
   </div>
 </nav>

@@ -10,16 +10,16 @@ const { name, icon, href, description } = Astro.props;
 ---
 
 <div
-  class="bg-card-bg h-[15ch] p-3 rounded-sm border-card-border border-2 m-3 flex flex-col"
+  class="bg-card-bg h-[17ch] p-3 rounded-sm border-card-border border-2 flex flex-col"
 >
   <div class="flex flex-row items-center">
     <img src={icon} class="w-8 h-8" alt="project icon" />
-    <span class="font-bold ml-2">{name}</span>
+    <span class="font-bold ml-2 text-2xl">{name}</span>
   </div>
   <p>
     {description}
   </p>
-  <a href={href} class="mt-auto">
+  <a href={href} target="_blank" class="mt-auto">
     <button
       class="w-full bg-white text-black rounded-md py-1 text-2xl font-bold hover:cursor-pointer"
     >
