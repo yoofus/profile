@@ -4,6 +4,7 @@
 :root {
   background-color: #1a1a24;
   color: white;
+  overflow: hidden;
 
   --card-bg: #202029;
   --card-border: #2f2f36;
