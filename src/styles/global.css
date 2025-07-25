@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+:root {
+  background-color: #1a1a24;
+  color: white;
+
+  --card-bg: #202029;
+  --card-border: #2f2f36;
+}
+
+body {
+  max-width: 75ch;
+  margin: auto;
+  font-family: "Inter", sans-serif;
+  margin-top: 3rem;
+}
+
+@theme {
+  --animate-alt-bounce: alt-bounce 1s ease-in-out infinite alternate;
+  --color-card-bg: var(--card-bg);
+  --color-card-border: var(--card-border);
+
+  @keyframes alt-bounce {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-1rem); /* or -25% depending on your use case */
+    }
+  }
+}

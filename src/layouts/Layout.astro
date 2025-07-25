@@ -1,0 +1,38 @@
+---
+import Navigation from "../components/Navigation.astro";
+
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>yusof</title>
+    <link rel="icon" href="/kitty.png" />
+  </head>
+  <body>
+    <Navigation />
+    <div>
+      <slot />
+    </div>
+
+    <img
+      src="/background.png"
+      alt="background"
+      width="364"
+      class="absolute -bottom-2 -left-10 -z-20 opacity-25"
+    />
+
+    <img
+      src="/background2.png"
+      alt="background"
+      width="364"
+      class="absolute -bottom-2 -right-10 -z-20 opacity-25"
+    />
+
+    <footer class="absolute left-[50%] translate-x-[-50%] bottom-8 font-mono">
+        d1 meatcanyon viewer
+    </footer>
+  </body>
+</html>

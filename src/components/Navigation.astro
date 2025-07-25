@@ -1,0 +1,37 @@
+---
+import { siDiscord, siGithub, siMastodon, siSignal } from "simple-icons";
+import Social from "./Social.astro";
+---
+
+<nav class="flex items-center justify-between gap-3 group/nav">
+  <div class="flex flex-row">
+    <img
+      src="/kitty.png"
+      width="64"
+      class="align-middle group-hover/nav:animate-alt-bounce"
+    />
+    <div class="ml-2 group-hover/nav:ml-3 transition-all duration-200">
+      <h2 class="text-2xl">hi, im <b class="text-3xl">yusof</b></h2>
+      <p class="flex items-center gap-1">
+        founder @ <a href="https://github.com/spaceness">
+          <img src="/spaceness.png" width="24" /></a
+        >
+      </p>
+    </div>
+  </div>
+  <div class="flex flex-row gap-3">
+    <Social href="https://github.com/yoofus" icon={siGithub}/>
+    <Social
+      href="https://discord.com/users/1257722365090205700"
+      icon={siDiscord}
+    />
+    <Social
+      href="https://wetdry.world/@yusof"
+      icon={siMastodon}
+    />
+    <Social
+      href="https://signal.me/#eu/IaXYvJQ83d6bCcRTTLwXhXZeopIkaUMTSiJJsE24C9_mN1U3vOpJRLQ59QKOHEHn"
+      icon={siSignal}
+    />
+  </div>
+</nav>
